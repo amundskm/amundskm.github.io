@@ -48,6 +48,13 @@ h4 {
   align-items: center;
 }
 
+h5, h6{
+  font-size: 1.5em;
+  font-weight: 200;
+  margin: 0;
+  padding: 0;
+}
+
 a{
   text-decoration: none;
 }
@@ -110,6 +117,28 @@ padding-top: .5em;
   border-radius: 5em
 }
 
+.skillsContainer {
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.experienceContainer {
+  flex-direction: column;
+}
+
+.experienceContainer > h5, .skillsContainer > h5 {
+  font-weight: 300;
+}
+
+.skillsTable {
+  width: 100%;
+  margin-left:5em;
+  margin-right:5em;
+  font-size: 1.25em;
+  font-weight: 200;
+  margin-bottom: 1.5em
+}
+
 .projectsContainer > .textContainer > h3 {
   margin-bottom: .25em;
 }
@@ -127,4 +156,8 @@ padding-top: .5em;
 
 .githubIcon{
   margin-right: 1em;
+}
+
+.courseLink{
+  text-decoration: underline;
 }
