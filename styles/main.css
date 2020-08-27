@@ -74,6 +74,7 @@ p{
 }
 
 .mainContainer {
+  min-width: 400px;
   margin: 5em;
   background-color: #fff;
   border-radius: 5em
@@ -160,4 +161,48 @@ padding-top: .5em;
 
 .courseLink{
   text-decoration: underline;
+}
+
+@media only screen and (max-width: 500px) {
+  html {
+    background: url("../images/pexels-philip-ackermann-1666021-wide.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color:  #27ae60;
+    font-family: 'Oswald', sans-serif;
+    height: auto;
+  }
+  footer {
+    margin-top: 1em;
+  }
+  .mainContainer {
+    flex-direction: column;
+    margin: .1em;
+    padding-bottom: 1em;
+  }
+
+  .skillsTable {
+    margin-left:0;
+    margin-right:0;
+    font-size: 1.25em;
+    font-weight: 200;
+    margin-bottom: 1.5em
+  }
+
+  .footerContainer {
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 2em;
+    margin: 0 5em 0 5em;
+    padding: 1em 0 1em 0;
+    height: 100%
+  }
+
+  .borderIcon, .githubIcon {
+    display: none;
+  }
+
+
 }
